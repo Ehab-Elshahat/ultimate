@@ -1,0 +1,86 @@
+.sidebar {
+  background-color: #333;
+  color: #fff;
+  width: 220px;
+  height: 100vh;
+  float: left;
+  padding: 20px;
+}
+
+.sidebar .side-head {
+  margin-bottom: 30px;
+}
+
+.sidebar .link-list > li > a {
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+  padding: 10px 15px;
+  display: block;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.sidebar .link-list > li > a:before {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  top: 50%;
+  left: 0;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.sidebar .link-list > li > a:hover {
+  padding-left: 25px;
+}
+
+.sidebar .link-list > li > a .arrow {
+  float: right;
+  margin-top: 5px;
+}
+
+.sidebar .link-list .sub-list {
+  display: none;
+}
+
+.sidebar .link-list .sub-list li a {
+  color: #8a8585;
+  text-decoration: none;
+  position: relative;
+  padding: 8px 20px;
+  display: block;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.sidebar .link-list .sub-list li a:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 3px;
+  background-color: #8a8585;
+}
+
+.sidebar .link-list .sub-list li a:hover {
+  color: #fff;
+}
+
+.sidebar .link-list .sub-list li a:hover:before {
+  background-color: #fff;
+}
+
+.content {
+  background-color: black;
+  color: #fff;
+  width: calc(100% - 220px);
+  float: left;
+  height: 100vh;
+}
+
+/*# sourceMappingURL=main.css.map */
