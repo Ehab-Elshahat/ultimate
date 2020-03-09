@@ -1,0 +1,100 @@
+.navbar {
+  padding: 10px 5px;
+  background-color: #DDD;
+  .custome-2 {
+    cursor: pointer;
+    margin-left: 5px;
+  }
+
+  .dropdown {
+    margin: 0 20px;
+
+    .dropdown-toggle::after {
+      display: none;
+    }
+
+    .notif {
+      border-radius: 50%;
+      background-color: #c0bfbfe6;
+      padding: 3px 6px;
+      font-size: 13px;  
+    }
+
+    .dropdown-menu {
+      min-width: 300px;
+      min-height: 250px;
+      padding: 0 0 10px 0;
+      margin-top: 4px;
+      margin-left: 3px;
+      box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
+      border: 0;
+      border-radius: 0;
+  
+      .notif-head {
+        background-color: #333;
+        color: #FFF;
+        text-align: center;
+        text-transform: capitalize;
+        font-size: 1.2rem;
+        padding: 10px;
+        font-weight: normal;
+      }
+
+      &::before {
+        content: '';
+        position: absolute;
+        border-width: 10px;
+        border-style: solid;
+        border-color: transparent transparent #333 transparent;
+        top: -20px;
+        left: 0;
+      }
+
+      .notif-list {
+        margin-bottom: 0 !important;
+        li {
+          display: block;
+          padding: 8px;
+          text-transform: capitalize;
+
+          a {
+            text-decoration: none;
+            padding-left: 10px;
+            color: inherit;
+          }
+          &:nth-child(1) .icon-notif  {
+            color: #55efc4;
+          }
+
+          &:nth-child(2) .icon-notif  {
+            color: #a29bfe;
+          }
+
+          &:nth-child(3) .icon-notif  {
+            color: #fd79a8;
+          }
+
+          &:nth-child(4) .icon-notif  {
+            color: #273c75;
+          }
+          
+        }
+      }
+
+      .v-all {
+        display: block;
+        text-align: center;
+        text-transform: capitalize;
+        text-decoration: none;
+        &:hover {
+          color: #007bff;
+        }
+      }
+    }
+  }
+
+  .full-screen {
+    cursor: pointer;
+    display: inline-block;
+  }
+}

@@ -5,6 +5,11 @@
   height: 100vh;
   float: left;
   padding: 20px;
+  transition: .4s;
+
+  &.move {
+    margin-left: -220px;
+  }
 
   .side-head {
     margin-bottom: 30px;
@@ -12,13 +17,14 @@
 
   .link-list {
 
-    & > li > a {
+    &>li>a {
       color: #fff;
       text-decoration: none;
       position: relative;
       padding: 10px 15px;
       display: block;
       transition: .3s;
+
       &:before {
         content: '';
         position: absolute;
@@ -30,16 +36,25 @@
         border: 2px solid #fff;
         transform: translateY(-50%);
       }
+
       &:hover {
         padding-left: 25px;
       }
+
       .arrow {
         float: right;
         margin-top: 5px;
       }
+
+      .rotate {
+        transition: .3s;
+        transform: rotate(90deg);
+      }
     }
+
     .sub-list {
       display: none;
+
       li a {
         color: #8a8585;
         text-decoration: none;
@@ -65,7 +80,7 @@
         &:hover:before {
           background-color: #fff;
         }
-        
+
       }
     }
   }
