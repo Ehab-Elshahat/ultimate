@@ -97,4 +97,80 @@
     cursor: pointer;
     display: inline-block;
   }
+
+  .mega-menu {
+    position: absolute;
+    right: 50px;
+    text-transform: capitalize;
+
+    .dropdown-toggle::after {
+      display: none;
+    }
+    .avatar {
+      width: 40px;
+      height: 40px;
+      margin-right: 5px;
+    }
+
+    .avtar-down {
+      color: inherit;
+      margin-left: 5px;
+    }
+
+    .dropdown-menu {
+      margin-top: -3px;
+      min-width: 400px;
+      min-height: 250px;
+      border-radius: 0;
+      padding: 10px;
+
+      &::before {
+        content: '';
+        position: absolute;
+        border-width: 10px;
+        border-style: solid;
+        border-color: transparent transparent #979393 transparent;
+        top: -20px;
+        right: 40px;
+      }
+
+      .info {
+        p {
+          color: #979393;
+        }
+      }
+      .activity-list {
+        li {
+          margin: 5px 0;
+        }
+      }
+
+      .username-links {
+        .link-box {
+          padding: 10px;
+          font-size: .8rem;
+          border-radius: 4px;
+          display: flex;
+          justify-content: space-evenly;
+          align-items: center;
+          background-color: #DDD;
+          
+          .user-settings {
+              color: #1dd1a1;
+            }
+          .user-profile {
+              color: #74b9ff;
+            }
+            .user-logout {
+              color: #ff7675;
+            }
+          
+          span {
+            color: #6a6767;
+          }
+        }
+      }
+      
+    }
+  }
 }

@@ -204,4 +204,83 @@
   display: inline-block;
 }
 
+.navbar .mega-menu {
+  position: absolute;
+  right: 50px;
+  text-transform: capitalize;
+}
+
+.navbar .mega-menu .dropdown-toggle::after {
+  display: none;
+}
+
+.navbar .mega-menu .avatar {
+  width: 40px;
+  height: 40px;
+  margin-right: 5px;
+}
+
+.navbar .mega-menu .avtar-down {
+  color: inherit;
+  margin-left: 5px;
+}
+
+.navbar .mega-menu .dropdown-menu {
+  margin-top: -3px;
+  min-width: 400px;
+  min-height: 250px;
+  border-radius: 0;
+  padding: 10px;
+}
+
+.navbar .mega-menu .dropdown-menu::before {
+  content: '';
+  position: absolute;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent #979393 transparent;
+  top: -20px;
+  right: 40px;
+}
+
+.navbar .mega-menu .dropdown-menu .info p {
+  color: #979393;
+}
+
+.navbar .mega-menu .dropdown-menu .activity-list li {
+  margin: 5px 0;
+}
+
+.navbar .mega-menu .dropdown-menu .username-links .link-box {
+  padding: 10px;
+  font-size: .8rem;
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #DDD;
+}
+
+.navbar .mega-menu .dropdown-menu .username-links .link-box .user-settings {
+  color: #1dd1a1;
+}
+
+.navbar .mega-menu .dropdown-menu .username-links .link-box .user-profile {
+  color: #74b9ff;
+}
+
+.navbar .mega-menu .dropdown-menu .username-links .link-box .user-logout {
+  color: #ff7675;
+}
+
+.navbar .mega-menu .dropdown-menu .username-links .link-box span {
+  color: #6a6767;
+}
+
 /*# sourceMappingURL=main.css.map */
